@@ -1,0 +1,12 @@
+<h1>This is index page for Bartenders</h1>
+<h2>Bartenders:</h2>
+<hr/>
+<ol>
+<% @bartenders.each do |b|%>
+    <li>
+        <%=link_to b.name, bartender_path(b)%>
+    </li>
+<br/>
+<%end%>
+
+</ol>

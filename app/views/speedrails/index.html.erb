@@ -1,0 +1,8 @@
+<h1>All SpeedRails</h1>
+<hr/>
+<h2>speeed</h2>
+<% @speedrails.each do | sr |%>
+    <li>
+        <%= link_to sr.location, speedrail_path(sr)%>
+    </li>
+<%end%>

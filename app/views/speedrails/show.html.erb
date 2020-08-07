@@ -1,0 +1,11 @@
+<h1>Speed Rail : <%= @speedrail.location %> </h1>
+<hr/>
+<h2>Bottles to measure at this location : </h2>
+<ul>
+<% @speedrail.products.each do | p | %>
+<li>
+    <%= p.name %>
+    <%= p.is_at_par?%>
+</li>
+<% end %>
+</ul>
